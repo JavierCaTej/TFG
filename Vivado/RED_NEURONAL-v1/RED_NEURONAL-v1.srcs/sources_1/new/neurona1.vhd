@@ -46,9 +46,9 @@ end neurona1;
 architecture Behavioral of neurona1 is
    
     --Constantes para los pesos y bias de la neurona
-    constant w1 : real := -0.25;
-    constant w2 : real := -0.25;
-    constant b  : real := 0.40;
+    constant w1 : real := 1.0;
+    constant w2 : real := 0.0;
+    constant b  : real := 0.0;
     
     --Funcion de activación sigmoidal
     function sigmoidal(x : real) return real is

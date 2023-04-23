@@ -47,10 +47,10 @@ end neurona2;
 architecture Behavioral of neurona2 is
 
     --Constantes para los pesos y bias de la neurona
-    constant w1 : real := -0.25;
-    constant w2 : real := 0.25;
-    constant w3 : real := -0.25;
-    constant b  : real := 0.00;
+    constant w1 : real := 0.1;
+    constant w2 : real := 0.2;
+    constant w3 : real := 0.21;
+    constant b  : real := 0.0;
 
     --Funcion de activacion rampa   -- NO HACE NADA, SIMPLEMENTE PARA ACLARAR LA FUNCION DE ACTIVACION
     function rampa(x : real) return real is 
@@ -72,5 +72,6 @@ architecture Behavioral of neurona2 is
 begin
     --Calculo de la salida de la neurona
     salida <= '1' when rampa((to_real(entrada1)*w1) + (to_real(entrada2)*w2) + (to_real(entrada3)*w3) + b) > 0.5 else '0';
+    --salida <= '1' when rampa((1.0*w1) + (1.0*w2) + (0.0*w3) + b) > 0.0 else '0';
 
 end Behavioral;
