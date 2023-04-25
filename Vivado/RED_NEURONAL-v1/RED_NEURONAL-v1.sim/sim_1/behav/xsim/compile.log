@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/escar/OneDrive/Documentos/GitHub/TFG/Vivado/RED_NEURONAL-v1/RED_NEURONAL-v1.srcs/sources_1/new/neurona1.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'neurona1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/escar/OneDrive/Documentos/GitHub/TFG/Vivado/RED_NEURONAL-v1/RED_NEURONAL-v1.srcs/sim_1/new/red_neuronal_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'red_neuronal_tb'
