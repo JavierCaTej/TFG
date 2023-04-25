@@ -22,6 +22,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
+
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -42,20 +43,84 @@ component red_neuronal is
         --Entrada de 6 bits, cada neurona coge 2 bits
         entrada : in std_logic_vector(5 downto 0);
         --Salida de la red neuronal despues del proceso
-        salida  : out std_logic);
+        salida_red  : out std_logic);
 end component red_neuronal;
 
+component neurona1 is
+    Port ( 
+        --Entradas de la neurona
+        entrada1 : in STD_LOGIC;
+        entrada2 : in STD_LOGIC;
+        --Salida de la neurona
+        salida : out STD_LOGIC);
+end component neurona1;
+
+component neurona2 is
+    Port ( 
+        --Entradas de la neurona
+        entrada1 : in STD_LOGIC;
+        entrada2 : in STD_LOGIC;
+        entrada3 : in STD_LOGIC;
+        --Salida de la neurona
+        salida : out STD_LOGIC);
+end component neurona2;
+
+
 --SEÑALES
-signal entrada : std_logic_vector(5 downto 0) := "000000";
-signal salida : std_logic;
+signal ent : std_logic_vector(5 downto 0) := "000000";
+signal sal : std_logic;
+signal ent1_n1, ent2_n1, sal_n1, sal_n2, sal_n3 : std_logic;
+signal ent1_n2, ent2_n2, ent3_n2, sal_n4 : std_logic;
+
 
 begin
 
 --INSTANCIACION DE UNIT UNDER TEST (UUT)
-    uut : red_neuronal port map (entrada => entrada, salida => salida);
+    --uut : red_neuronal port map (entrada => ent, salida_red => sal);
+      n1  : neurona1 port map(entrada1 => ent(0), entrada2 => ent(1), salida => sal_n1);
+      n2  : neurona1 port map(entrada1 => ent(2), entrada2 => ent(3), salida => sal_n2);
+      n3  : neurona1 port map(entrada1 => ent(4), entrada2 => ent(5), salida => sal_n3);
+
+      
+      
+      n4  : neurona2 port map(entrada1 => sal_n1, entrada2 => sal_n2, entrada3 => sal_n3, salida => sal_n4);
+    
+    
+    
     
 --SIMULACION
-    entrada <= "000000" after 100 ns,
+    
+    --CAPA 1
+    ent1_n1 <= '0' after 100 ns, 
+               '1' after 300 ns;
+               
+           
+    ent2_n1 <= '0' after 100 ns,
+               '1' after 200 ns,
+               '0' after 300 ns,
+               '1' after 400 ns;
+    
+    
+    --CAPA 2           
+    ent1_n2 <= '0' after 100 ns, 
+               '1' after 500 ns;        
+    
+    ent2_n2 <= '0' after 100 ns,
+               '1' after 300 ns,
+               '0' after 500 ns,
+               '1' after 700 ns;
+
+    ent3_n2 <= '0' after 100 ns,
+               '1' after 200 ns,
+               '0' after 300 ns,
+               '1' after 400 ns,
+               '0' after 500 ns,
+               '1' after 600 ns,
+               '0' after 700 ns,
+               '1' after 800 ns;
+
+    --RED NEURONAL
+    ent <= "000000" after 100 ns,
                "000001" after 200 ns, 
                "000010" after 300 ns, 
                "000011" after 400 ns, 

@@ -36,7 +36,7 @@ entity red_neuronal is
         --Entrada de 6 bits, cada neurona coge 2 bits
         entrada : in std_logic_vector(5 downto 0);
         --Salida de la red neuronal despues del proceso
-        salida  : out std_logic);
+        salida_red  : out std_logic);
 end red_neuronal;
 
 architecture Behavioral of red_neuronal is
@@ -74,9 +74,9 @@ begin
     n3 : neurona1   port map (ent(4), ent(5), sal_n3);
 
     --CAPA 2
-    n4 : neurona2   port map (sal_n1, sal_n2 , sal_n3, sal_n4);
+    n4 : neurona2   port map (sal_n1, sal_n2 , sal_n3, salida_red);
 
     --ASIGNACIÓN DE LA SALIDA
-    salida <= sal_n4;
+    --salida_red <= sal_n4;
     
 end Behavioral;
