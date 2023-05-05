@@ -68,57 +68,26 @@ end component neurona2;
 
 --SEÑALES
 signal ent : std_logic_vector(5 downto 0) := "000000";
-signal sal : std_logic;
-signal ent1_n1, ent2_n1, sal_n1, sal_n2, sal_n3 : std_logic;
-signal ent1_n2, ent2_n2, ent3_n2, sal_n4 : std_logic;
-
+signal sal : std_logic_vector(2 downto 0);
+signal sal_red : std_logic;
 
 begin
 
 --INSTANCIACION DE UNIT UNDER TEST (UUT)
-    --uut : red_neuronal port map (entrada => ent, salida_red => sal);
-      n1  : neurona1 port map(entrada1 => ent(0), entrada2 => ent(1), salida => sal_n1);
-      n2  : neurona1 port map(entrada1 => ent(2), entrada2 => ent(3), salida => sal_n2);
-      n3  : neurona1 port map(entrada1 => ent(4), entrada2 => ent(5), salida => sal_n3);
 
+    capa1: for K in 0 to 2 generate 
+    begin
+      n1: entity work.neurona1 port map (entrada1 => ent(K*2), entrada2 => ent(K*2+1), salida => sal(K));
+    end generate;
       
       
-      n4  : neurona2 port map(entrada1 => sal_n1, entrada2 => sal_n2, entrada3 => sal_n3, salida => sal_n4);
+      n4  : neurona2 port map(entrada1 => sal(0), entrada2 => sal(1), entrada3 => sal(2), salida => sal_red);
     
     
     
     
 --SIMULACION
     
-    --CAPA 1
-    ent1_n1 <= '0' after 100 ns, 
-               '1' after 300 ns;
-               
-           
-    ent2_n1 <= '0' after 100 ns,
-               '1' after 200 ns,
-               '0' after 300 ns,
-               '1' after 400 ns;
-    
-    
-    --CAPA 2           
-    ent1_n2 <= '0' after 100 ns, 
-               '1' after 500 ns;        
-    
-    ent2_n2 <= '0' after 100 ns,
-               '1' after 300 ns,
-               '0' after 500 ns,
-               '1' after 700 ns;
-
-    ent3_n2 <= '0' after 100 ns,
-               '1' after 200 ns,
-               '0' after 300 ns,
-               '1' after 400 ns,
-               '0' after 500 ns,
-               '1' after 600 ns,
-               '0' after 700 ns,
-               '1' after 800 ns;
-
     --RED NEURONAL
     ent <= "000000" after 100 ns,
                "000001" after 200 ns, 
