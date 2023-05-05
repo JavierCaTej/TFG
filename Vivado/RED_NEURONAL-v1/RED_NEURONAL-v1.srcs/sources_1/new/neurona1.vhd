@@ -1,14 +1,16 @@
 ----------------------------------------------------------------------------------
--- Company: 
+-- Company: Universidad de Cordoba
 -- Engineer: Javier Carmona Tejero
 -- 
--- Create Date: 22.04.2023 17:51:58
+-- Create Date: 22.04.2023 17:50:31
 -- Design Name: 
--- Module Name: neurona1 - Behavioral
--- Project Name: 
+-- Module Name: red_neuronal - Behavioral
+-- Project Name: Optimización de toma de decisiones utilizando FPGAs
 -- Target Devices: 
--- Tool Versions: 
--- Description: Componente de neuronas de capa 1
+-- Tool Versions: 1.2
+-- Description: Componente de neuronas de capa 1. Este componente tiene 2 bits de entrada a los que estan asignados 
+--              unos pesos y bia especifica para dar un resultado u otro. Como salida tiene un unico bit el cual coge valor de 
+--              0 o 1 segun la funcion de activacion sigmoidal que tenemos como referencia.
 -- 
 -- Dependencies: 
 -- 
@@ -24,15 +26,6 @@ use IEEE.STD_LOGIC_1164.ALL;
 use ieee.std_logic_unsigned.all; --usar los operandos + y *
 use ieee.numeric_std.all;   --usar los numeros reales (se ponen con decimales 2.0, 14.0,...)
 use ieee.math_real.all;     --usar los operandos ** 
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity neurona1 is
     Port ( 

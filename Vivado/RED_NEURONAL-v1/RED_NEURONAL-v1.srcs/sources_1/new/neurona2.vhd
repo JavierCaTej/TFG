@@ -1,14 +1,16 @@
 ----------------------------------------------------------------------------------
--- Company: 
+-- Company: Universidad de Cordoba
 -- Engineer: Javier Carmona Tejero
 -- 
--- Create Date: 22.04.2023 18:42:10
+-- Create Date: 22.04.2023 17:50:31
 -- Design Name: 
--- Module Name: neurona2 - Behavioral
--- Project Name: 
+-- Module Name: red_neuronal - Behavioral
+-- Project Name: Optimización de toma de decisiones utilizando FPGAs
 -- Target Devices: 
--- Tool Versions: 
--- Description: Componente de neuronas de capa 2
+-- Tool Versions: 1.2
+-- Description: Componente de neuronas de capa 2. Este componente tiene 3 bits de entrada que corresponden a las 
+--              salidas de las 3 neuronas de capa 1. Cada bit de entrada tiene asignado un peso especifico. En este caso
+--              como estamos en una capa de salida se usara como funcion de activacion una funcion lineal.
 -- 
 -- Dependencies: 
 -- 
@@ -24,15 +26,6 @@ use IEEE.STD_LOGIC_1164.ALL;
 use ieee.std_logic_unsigned.all; --usar los operandos + y *
 use ieee.numeric_std.all;   --usar los numeros reales (se ponen con decimales 2.0, 14.0,...)
 use ieee.math_real.all;     --usar los operandos ** 
-
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity neurona2 is
     Port ( 
@@ -72,6 +65,5 @@ architecture Behavioral of neurona2 is
 begin
     --Calculo de la salida de la neurona
     salida <= '1' when rampa((to_real(entrada1)*w1) + (to_real(entrada2)*w2) + (to_real(entrada3)*w3) + b) > 0.5 else '0';
-    --salida <= '1' when rampa((1.0*w1) + (1.0*w2) + (0.0*w3) + b) > 0.0 else '0';
 
 end Behavioral;
