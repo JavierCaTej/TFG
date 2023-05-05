@@ -26,14 +26,7 @@ use ieee.std_logic_unsigned.all; --usar los operandos + y *
 use ieee.numeric_std.all;   --usar los numeros reales (se ponen con decimales 2.0, 14.0,...)
 use ieee.math_real.all;     --usar los operandos ** 
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
 
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity red_neuronal is
     Port (
@@ -67,7 +60,6 @@ component neurona2 is
 end component neurona2;
 
 -- SEÑALES
---signal sal_n1, sal_n2, sal_n3, sal_n4 : std_logic;
 signal sal : std_logic_vector(2 downto 0);
 signal ent : std_logic_vector(5 downto 0) := entrada;
 
@@ -76,10 +68,7 @@ begin
    
    
 --    --CAPA 1
---    n1 : neurona1   port map (ent(0), ent(1), sal_n1);
---    n2 : neurona1   port map (ent(2), ent(3), sal_n2);
---    n3 : neurona1   port map (ent(4), ent(5), sal_n3);
-    
+
     capa1: for K in 0 to 2 generate 
     begin
       n1: entity work.neurona1 port map (entrada1 => ent(K*2), entrada2 => ent(K*2+1), salida => sal(K));
@@ -89,7 +78,5 @@ begin
     --CAPA 2
     n4 : neurona2   port map (sal(0), sal(1) , sal(2), salida_red);
 
---    --ASIGNACIÓN DE LA SALIDA
---    --salida_red <= sal_n4;
     
 end Behavioral;
