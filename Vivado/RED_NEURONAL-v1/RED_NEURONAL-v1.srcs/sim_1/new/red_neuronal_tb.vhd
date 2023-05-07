@@ -61,10 +61,21 @@ component neurona2 is
         entrada1 : in STD_LOGIC;
         entrada2 : in STD_LOGIC;
         entrada3 : in STD_LOGIC;
+        entrada4 : in STD_LOGIC;
         --Salida de la neurona
         salida : out STD_LOGIC);
 end component neurona2;
 
+component neurona3 is
+    Port ( 
+        --Entradas de la neurona
+        entrada1 : in STD_LOGIC;
+        entrada2 : in STD_LOGIC;
+        entrada3 : in STD_LOGIC;
+        entrada4 : in STD_LOGIC;
+        --Salida de la neurona
+        salida : out STD_LOGIC);
+end component neurona3;
 
 --SEÑALES
 signal ent : std_logic_vector(5 downto 0) := "000000";
