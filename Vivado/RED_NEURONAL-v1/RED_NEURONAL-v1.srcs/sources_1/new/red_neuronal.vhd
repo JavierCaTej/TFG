@@ -31,6 +31,7 @@ use ieee.math_real.all;     --usar los operandos **
 entity red_neuronal is
     Port (
         --Entrada de 32 bits, cada neurona coge 2 bits
+        clk : in std_logic;
         entrada : in std_logic_vector(31 downto 0);
         --Salida de la red neuronal despues del proceso
         salida_red  : out std_logic);
