@@ -40,10 +40,10 @@ end neurona2;
 architecture Behavioral of neurona2 is
 
     --Constantes para los pesos y bias de la neurona
-    constant w1 : real := 0.1;
-    constant w2 : real := 0.2;
-    constant w3 : real := 0.21;
-    constant w4 : real := 0.21;
+    constant w1 : real := 0.0;
+    constant w2 : real := 1.0;
+    constant w3 : real := 0.0;
+    constant w4 : real := 0.0;
     constant b  : real := 0.0;
 
     --Funcion de activación sigmoidal

@@ -10,11 +10,12 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
 Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_unsigned
-Compiling package ieee.numeric_std
 Compiling package ieee.math_real
 Compiling architecture behavioral of entity xil_defaultlib.neurona1 [neurona1_default]
 Compiling architecture behavioral of entity xil_defaultlib.neurona2 [neurona2_default]
+Compiling architecture behavioral of entity xil_defaultlib.neurona3 [neurona3_default]
 Compiling architecture behavioral of entity xil_defaultlib.red_neuronal_tb
 Built simulation snapshot red_neuronal_tb_behav

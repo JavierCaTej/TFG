@@ -1,4 +1,4 @@
-Running: xsim.dir/red_neuronal_tb_behav/xsimk.exe -simmode gui -wdb red_neuronal_tb_behav.wdb -simrunnum 0 -socket 55994
+Running: xsim.dir/red_neuronal_tb_behav/xsimk.exe -simmode gui -wdb red_neuronal_tb_behav.wdb -simrunnum 0 -socket 63737
 Design successfully loaded
-Design Loading Memory Usage: 7552 KB (Peak: 7552 KB)
-Design Loading CPU Usage: 30 ms
+Design Loading Memory Usage: 7556 KB (Peak: 7556 KB)
+Design Loading CPU Usage: 46 ms
