@@ -1,0 +1,7 @@
+Running: xsim.dir/microSD_controller_behav/xsimk.exe -simmode gui -wdb microSD_controller_behav.wdb -simrunnum 0 -socket 56226
+Design successfully loaded
+Design Loading Memory Usage: 8300 KB (Peak: 8300 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 8676 KB (Peak: 8676 KB)
+Simulation CPU Usage: 46 ms

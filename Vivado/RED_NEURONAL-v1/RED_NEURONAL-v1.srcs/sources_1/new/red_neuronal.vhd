@@ -21,20 +21,18 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.std_logic_arith.all;
+use ieee.std_logic_unsigned.all; --usar los operandos + y *
+use ieee.numeric_std.all;   --usar los numeros reales (se ponen con decimales 2.0, 14.0,...)
+use ieee.math_real.all;     --usar los operandos ** 
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
 
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity red_neuronal is
     Port (
-        --Entrada de 6 bits, cada neurona coge 2 bits
-        entrada : in std_logic_vector(5 downto 0);
+        --Entrada de 32 bits, cada neurona coge 2 bits
+        clk : in std_logic;
+        entrada : in std_logic_vector(31 downto 0);
         --Salida de la red neuronal despues del proceso
         salida_red  : out std_logic);
 end red_neuronal;
@@ -58,25 +56,47 @@ component neurona2 is
         entrada1 : in STD_LOGIC;
         entrada2 : in STD_LOGIC;
         entrada3 : in STD_LOGIC;
+        entrada4 : in STD_LOGIC;
         --Salida de la neurona
         salida : out STD_LOGIC);
 end component neurona2;
 
--- SEÑALES
-signal sal_n1, sal_n2, sal_n3, sal_n4 : std_logic;
-signal ent : std_logic_vector(5 downto 0) := entrada;
+-- NEURONA CAPA 3
+component neurona3 is
+    Port ( 
+        --Entradas de la neurona
+        entrada1 : in STD_LOGIC;
+        entrada2 : in STD_LOGIC;
+        entrada3 : in STD_LOGIC;
+        entrada4 : in STD_LOGIC;
+        --Salida de la neurona
+        salida : out STD_LOGIC);
+end component neurona3;
 
+-- SEÑALES
+signal sal1 : std_logic_vector(15 downto 0);     -- Salida de las neuronas de capa 1 
+signal ent : std_logic_vector(31 downto 0) := entrada;
+
+signal sal2 : std_logic_vector(3 downto 0);      -- Salida de las neuronas de capa 2
+
+signal sal3 : std_logic;        -- Salida de la neurona de capa 3
 
 begin
+   
+   
     --CAPA 1
-    n1 : neurona1   port map (ent(0), ent(1), sal_n1);
-    n2 : neurona1   port map (ent(2), ent(3), sal_n2);
-    n3 : neurona1   port map (ent(4), ent(5), sal_n3);
+    capa1: for K in 0 to 15 generate 
+    begin
+      n1: entity work.neurona1 port map (entrada1 => ent(K*2), entrada2 => ent(K*2+1), salida => sal1(K));
+    end generate;
 
     --CAPA 2
-    n4 : neurona2   port map (sal_n1, sal_n2 , sal_n3, salida_red);
-
-    --ASIGNACIÓN DE LA SALIDA
-    --salida_red <= sal_n4;
+    capa2: for K in 0 to 3 generate
+    begin
+        n2: entity work.neurona2 port map (entrada1 => sal1(K), entrada2 => sal1(K+1), entrada3 => sal1(K+2), entrada4 => sal1(K+3), salida => sal2(K));
+    end generate;
+    
+    --CAPA 3
+    n3: neurona3 port map (sal2(0), sal2(1), sal2(2), sal2(3), sal3); 
     
 end Behavioral;

@@ -25,14 +25,6 @@ use ieee.std_logic_unsigned.all; --usar los operandos + y *
 use ieee.numeric_std.all;   --usar los numeros reales (se ponen con decimales 2.0, 14.0,...)
 use ieee.math_real.all;     --usar los operandos ** 
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity neurona1 is
     Port ( 
@@ -67,9 +59,11 @@ architecture Behavioral of neurona1 is
         end if;   
     end function;
     
+    signal sal : std_logic;
     
 begin
     --Calculo de la salidad de la neurona
-    salida <= '1' when sigmoidal((to_real(entrada1)*w1) + (to_real(entrada2)*w2) + b) > 0.5 else '0';
+    sal <= '1' when sigmoidal((to_real(entrada1)*w1) + (to_real(entrada2)*w2) + b) > 0.5 else '0';
+    salida <= sal;
 
 end Behavioral;
