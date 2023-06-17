@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1686641380">
+  <File Type="PA-TCL" Name="SdCardCtrlTest.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="SdCardCtrlTest_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="SdCardCtrlTest_reports.tcl"/>
+  <File Type="RDS-RDS" Name="SdCardCtrlTest.vds"/>
+  <File Type="RDS-UTIL" Name="SdCardCtrlTest_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="SdCardCtrlTest_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="SdCardCtrlTest.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="SdCardCtrlTest_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="SdCardCtrlTest_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_Lib-master/Common.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VHDL_Lib-master/Common.vhd"/>
+        <Attr Name="ImportTime" Val="1686641099"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_Lib-master/Board_Packages/XuLA.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VHDL_Lib-master/Board_Packages/XuLA.vhd"/>
+        <Attr Name="ImportTime" Val="1686641101"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_Lib-master/Board_Packages/XuLA2.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VHDL_Lib-master/Board_Packages/XuLA2.vhd"/>
+        <Attr Name="ImportTime" Val="1686641101"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_Lib-master/ClkGen.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VHDL_Lib-master/ClkGen.vhd"/>
+        <Attr Name="ImportTime" Val="1686641099"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_Lib-master/SyncToClk.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VHDL_Lib-master/SyncToClk.vhd"/>
+        <Attr Name="ImportTime" Val="1686641100"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_Lib-master/HostIo.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VHDL_Lib-master/HostIo.vhd"/>
+        <Attr Name="ImportTime" Val="1686641099"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_Lib-master/SDCard.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VHDL_Lib-master/SDCard.vhd"/>
+        <Attr Name="ImportTime" Val="1686641100"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_Lib-master/Misc.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VHDL_Lib-master/Misc.vhd"/>
+        <Attr Name="ImportTime" Val="1686641100"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_Lib-master/RandGen.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VHDL_Lib-master/RandGen.vhd"/>
+        <Attr Name="ImportTime" Val="1686641100"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_Lib-master/audio.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VHDL_Lib-master/audio.vhd"/>
+        <Attr Name="ImportTime" Val="1686641100"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_Lib-master/LedDigits.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VHDL_Lib-master/LedDigits.vhd"/>
+        <Attr Name="ImportTime" Val="1686641100"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_Lib-master/ButtonScanner.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VHDL_Lib-master/ButtonScanner.vhd"/>
+        <Attr Name="ImportTime" Val="1686641099"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_Lib-master/RotaryEncoder.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VHDL_Lib-master/RotaryEncoder.vhd"/>
+        <Attr Name="ImportTime" Val="1686641100"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_Lib-master/PatternGen.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VHDL_Lib-master/PatternGen.vhd"/>
+        <Attr Name="ImportTime" Val="1686641100"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_Lib-master/SdramCntl.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VHDL_Lib-master/SdramCntl.vhd"/>
+        <Attr Name="ImportTime" Val="1686641100"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_Lib-master/Spi.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VHDL_Lib-master/Spi.vhd"/>
+        <Attr Name="ImportTime" Val="1686641100"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_Lib-master/TestBoardCore.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VHDL_Lib-master/TestBoardCore.vhd"/>
+        <Attr Name="ImportTime" Val="1686641100"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_Lib-master/hcsr04.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VHDL_Lib-master/hcsr04.vhd"/>
+        <Attr Name="ImportTime" Val="1686641100"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_Lib-master/FlashCntl.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VHDL_Lib-master/FlashCntl.vhd"/>
+        <Attr Name="ImportTime" Val="1686641099"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_Lib-master/HostIoToSpi.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VHDL_Lib-master/HostIoToSpi.vhd"/>
+        <Attr Name="ImportTime" Val="1686641100"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_Lib-master/RgbLed.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VHDL_Lib-master/RgbLed.vhd"/>
+        <Attr Name="ImportTime" Val="1686641100"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_Lib-master/AdcInterfaces.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VHDL_Lib-master/AdcInterfaces.vhd"/>
+        <Attr Name="ImportTime" Val="1686641099"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_Lib-master/HostIoComm.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VHDL_Lib-master/HostIoComm.vhd"/>
+        <Attr Name="ImportTime" Val="1686641099"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_Lib-master/I2c.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VHDL_Lib-master/I2c.vhd"/>
+        <Attr Name="ImportTime" Val="1686641100"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_Lib-master/Delay.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VHDL_Lib-master/Delay.vhd"/>
+        <Attr Name="ImportTime" Val="1686641099"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_Lib-master/fifo.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VHDL_Lib-master/fifo.vhd"/>
+        <Attr Name="ImportTime" Val="1686641100"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_Lib-master/Vga.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VHDL_Lib-master/Vga.vhd"/>
+        <Attr Name="ImportTime" Val="1686641100"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_Lib-master/HostIoToI2c.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VHDL_Lib-master/HostIoToI2c.vhd"/>
+        <Attr Name="ImportTime" Val="1686641099"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_Lib-master/LedPanel.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VHDL_Lib-master/LedPanel.vhd"/>
+        <Attr Name="ImportTime" Val="1686641100"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_Lib-master/MemTest.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VHDL_Lib-master/MemTest.vhd"/>
+        <Attr Name="ImportTime" Val="1686641100"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_Lib-master/pwm.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VHDL_Lib-master/pwm.vhd"/>
+        <Attr Name="ImportTime" Val="1686641101"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VHDL_Lib-master/buttonDebouncer.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../VHDL_Lib-master/buttonDebouncer.vhd"/>
+        <Attr Name="ImportTime" Val="1686641100"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="SdCardCtrlTest"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/new/Nexys-4-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RED_NEURONAL-v1/RED_NEURONAL-v1.srcs/constrs_1/new/Nexys-4-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1683534719"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

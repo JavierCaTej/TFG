@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Jun  9 16:41:40 2023
+# Process ID: 6208
+# Current directory: C:/Users/escar/OneDrive/Documentos/GitHub/TFG/Vivado/pmod_tutorial/pmod_tutorial.runs/design_1_ilmb_v10_0_synth_1
+# Command line: vivado.exe -log design_1_ilmb_v10_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_ilmb_v10_0.tcl
+# Log file: C:/Users/escar/OneDrive/Documentos/GitHub/TFG/Vivado/pmod_tutorial/pmod_tutorial.runs/design_1_ilmb_v10_0_synth_1/design_1_ilmb_v10_0.vds
+# Journal file: C:/Users/escar/OneDrive/Documentos/GitHub/TFG/Vivado/pmod_tutorial/pmod_tutorial.runs/design_1_ilmb_v10_0_synth_1\vivado.jou
+# Running On: PORTATIL-JAVIER, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 2, Host memory: 8457 MB
+#-----------------------------------------------------------
+source design_1_ilmb_v10_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 429.480 ; gain = 106.867
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/escar/Downloads/vivado-library-zmod-v1-2019.1-2/vivado-library-zmod-v1-2019.1-2'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/escar/OneDrive/Documentos/GitHub/TFG/Vivado/pmod_tutorial/pmod_tutorial.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_ilmb_v10_0
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 567886b660f80780 to dir: C:/Users/escar/OneDrive/Documentos/GitHub/TFG/Vivado/pmod_tutorial/pmod_tutorial.runs/design_1_ilmb_v10_0_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/escar/OneDrive/Documentos/GitHub/TFG/Vivado/pmod_tutorial/pmod_tutorial.cache/ip/2022.2/5/6/567886b660f80780/design_1_dlmb_v10_0.dcp to C:/Users/escar/OneDrive/Documentos/GitHub/TFG/Vivado/pmod_tutorial/pmod_tutorial.runs/design_1_ilmb_v10_0_synth_1/design_1_ilmb_v10_0.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/escar/OneDrive/Documentos/GitHub/TFG/Vivado/pmod_tutorial/pmod_tutorial.cache/ip/2022.2/5/6/567886b660f80780/design_1_dlmb_v10_0_sim_netlist.v to C:/Users/escar/OneDrive/Documentos/GitHub/TFG/Vivado/pmod_tutorial/pmod_tutorial.runs/design_1_ilmb_v10_0_synth_1/design_1_ilmb_v10_0_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/escar/OneDrive/Documentos/GitHub/TFG/Vivado/pmod_tutorial/pmod_tutorial.cache/ip/2022.2/5/6/567886b660f80780/design_1_dlmb_v10_0_sim_netlist.vhdl to C:/Users/escar/OneDrive/Documentos/GitHub/TFG/Vivado/pmod_tutorial/pmod_tutorial.runs/design_1_ilmb_v10_0_synth_1/design_1_ilmb_v10_0_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/escar/OneDrive/Documentos/GitHub/TFG/Vivado/pmod_tutorial/pmod_tutorial.cache/ip/2022.2/5/6/567886b660f80780/design_1_dlmb_v10_0_stub.v to C:/Users/escar/OneDrive/Documentos/GitHub/TFG/Vivado/pmod_tutorial/pmod_tutorial.runs/design_1_ilmb_v10_0_synth_1/design_1_ilmb_v10_0_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/escar/OneDrive/Documentos/GitHub/TFG/Vivado/pmod_tutorial/pmod_tutorial.cache/ip/2022.2/5/6/567886b660f80780/design_1_dlmb_v10_0_stub.vhdl to C:/Users/escar/OneDrive/Documentos/GitHub/TFG/Vivado/pmod_tutorial/pmod_tutorial.runs/design_1_ilmb_v10_0_synth_1/design_1_ilmb_v10_0_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_ilmb_v10_0, cache-ID = 567886b660f80780.
+INFO: [Common 17-206] Exiting Vivado at Fri Jun  9 16:42:13 2023...
