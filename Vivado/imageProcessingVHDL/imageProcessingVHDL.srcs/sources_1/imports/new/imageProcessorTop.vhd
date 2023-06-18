@@ -81,7 +81,7 @@ architecture rtl of imageProcessTop is
             rd_rst_busy       : out std_logic                       -- Indica si la señal de reset de lectura ocupada
         );
     end component outputBuffer;
-
+    
     signal s_aresetn         : std_logic;
     signal s_axis_tready     : std_logic;
     signal m_axis_tdata      : std_logic_vector(7 downto 0);

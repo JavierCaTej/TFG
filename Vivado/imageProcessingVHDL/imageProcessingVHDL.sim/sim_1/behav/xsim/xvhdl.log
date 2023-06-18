@@ -1,0 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/escar/OneDrive/Documentos/GitHub/TFG/Vivado/imageProcessingVHDL/imageProcessingVHDL.srcs/sources_1/imports/new/conv.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'conv'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/escar/OneDrive/Documentos/GitHub/TFG/Vivado/imageProcessingVHDL/imageProcessingVHDL.srcs/sources_1/imports/new/lineBuffer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'lineBuffer'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/escar/OneDrive/Documentos/GitHub/TFG/Vivado/imageProcessingVHDL/imageProcessingVHDL.srcs/sources_1/imports/new/imageControl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'imageControl'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/escar/OneDrive/Documentos/GitHub/TFG/Vivado/imageProcessingVHDL/imageProcessingVHDL.srcs/sources_1/imports/new/imageProcessorTop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'imageProcessTop'

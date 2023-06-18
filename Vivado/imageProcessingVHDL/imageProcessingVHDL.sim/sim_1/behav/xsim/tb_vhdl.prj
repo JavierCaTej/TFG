@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../imageProcessingVHDL.srcs/sources_1/imports/new/conv.vhd" \
+"../../../../imageProcessingVHDL.srcs/sources_1/imports/new/lineBuffer.vhd" \
+"../../../../imageProcessingVHDL.srcs/sources_1/imports/new/imageControl.vhd" \
+"../../../../imageProcessingVHDL.srcs/sources_1/imports/new/imageProcessorTop.vhd" \
+
+# Do not sort compile order
+nosort
