@@ -1,0 +1,2 @@
+outputBuffer_sim_netlist.v,verilog,xil_defaultlib,../../../../zedboard-imageProcessing.gen/sources_1/ip/outputBuffer/outputBuffer_sim_netlist.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

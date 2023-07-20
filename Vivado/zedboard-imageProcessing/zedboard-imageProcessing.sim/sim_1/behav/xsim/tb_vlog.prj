@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../zedboard-imageProcessing.gen/sources_1/ip/outputBuffer/outputBuffer_sim_netlist.v" \
+"../../../../zedboard-imageProcessing.srcs/sources_1/imports/rtl/conv1.v" \
+"../../../../zedboard-imageProcessing.srcs/sources_1/imports/rtl/imageControl.v" \
+"../../../../zedboard-imageProcessing.srcs/sources_1/imports/rtl/imageProcessTop.v" \
+"../../../../zedboard-imageProcessing.srcs/sources_1/imports/rtl/lineBuffer.v" \
+"../../../../zedboard-imageProcessing.srcs/sim_1/imports/tb/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
