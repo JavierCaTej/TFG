@@ -1,5 +1,5 @@
 verilog xil_defaultlib  \
-"../../../../zedboard-imageProcessing.gen/sources_1/ip/outputBuffer/outputBuffer_sim_netlist.v" \
+"../../../../tmp_edit_project.gen/sources_1/ip/outputBuffer/sim/outputBuffer.v" \
 
 verilog xil_defaultlib "glbl.v"
 

@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/escar/OneDrive/Documentos/GitHub/TFG/Vivado/zedboard-imageProcessing/tmp_edit_project.gen/sources_1/ip/outputBuffer/sim/outputBuffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module outputBuffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/escar/OneDrive/Documentos/GitHub/TFG/Vivado/zedboard-imageProcessing/zedboard-imageProcessing.srcs/sources_1/imports/rtl/conv1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/escar/OneDrive/Documentos/GitHub/TFG/Vivado/zedboard-imageProcessing/zedboard-imageProcessing.srcs/sources_1/imports/rtl/imageControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imageControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/escar/OneDrive/Documentos/GitHub/TFG/Vivado/zedboard-imageProcessing/zedboard-imageProcessing.srcs/sources_1/imports/rtl/imageProcessTop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imageProcessTop
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/escar/OneDrive/Documentos/GitHub/TFG/Vivado/zedboard-imageProcessing/zedboard-imageProcessing.srcs/sources_1/imports/rtl/lineBuffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lineBuffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/escar/OneDrive/Documentos/GitHub/TFG/Vivado/zedboard-imageProcessing/zedboard-imageProcessing.srcs/sim_1/imports/tb/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb

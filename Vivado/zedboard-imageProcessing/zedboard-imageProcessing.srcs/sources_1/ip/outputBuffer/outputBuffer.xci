@@ -388,7 +388,7 @@
         "PACKAGE": [ { "value": "clg484" } ],
         "PREFHDL": [ { "value": "VERILOG" } ],
         "SILICON_REVISION": [ { "value": "" } ],
-        "SIMULATOR_LANGUAGE": [ { "value": "VERILOG" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
         "SPEEDGRADE": [ { "value": "-1" } ],
         "STATIC_POWER": [ { "value": "" } ],
         "TEMPERATURE_GRADE": [ { "value": "" } ],

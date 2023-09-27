@@ -32,7 +32,7 @@ entity neurona3 is
         entrada3 : in STD_LOGIC;
         entrada4 : in STD_LOGIC;
         --Salida de la neurona
-        salida : out STD_LOGIC);
+        salida : out STD_LOGIC_VECTOR(9 downto 0);
 end neurona3;
 
 architecture Behavioral of neurona3 is

@@ -1,0 +1,312 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7z020clg484-1",
+      "gen_directory": "../../../../vgainterface.gen/sources_1/bd/vgaSystem",
+      "name": "vgaSystem",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2"
+    },
+    "design_tree": {
+      "clk_wiz_0": "",
+      "v_axi4s_vid_out_0": "",
+      "v_tc_0": "",
+      "rst_clk_wiz_0_148M": "",
+      "xlconstant_0": "",
+      "xlslice_0": "",
+      "xlslice_1": "",
+      "xlslice_2": ""
+    },
+    "ports": {
+      "sys_clock": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "PHASE": {
+            "value": "0.0"
+          }
+        }
+      },
+      "reset": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "POLARITY": {
+            "value": "ACTIVE_LOW"
+          }
+        }
+      },
+      "vid_hsync_0": {
+        "direction": "O"
+      },
+      "vid_vsync_0": {
+        "direction": "O"
+      },
+      "VGA_R": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "VGA_G": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "VGA_B": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      }
+    },
+    "components": {
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "vgaSystem_clk_wiz_0_0",
+        "xci_path": "ip\\vgaSystem_clk_wiz_0_0\\vgaSystem_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "parameters": {
+          "CLKOUT1_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT1_JITTER": {
+            "value": "217.614"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "245.344"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "148.5"
+          },
+          "CLKOUT2_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT3_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT4_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT5_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT6_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLKOUT7_DRIVES": {
+            "value": "BUFG"
+          },
+          "CLK_IN1_BOARD_INTERFACE": {
+            "value": "sys_clock"
+          },
+          "FEEDBACK_SOURCE": {
+            "value": "FDBK_AUTO"
+          },
+          "MMCM_BANDWIDTH": {
+            "value": "OPTIMIZED"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "37.125"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "6.250"
+          },
+          "MMCM_COMPENSATION": {
+            "value": "ZHOLD"
+          },
+          "MMCM_DIVCLK_DIVIDE": {
+            "value": "4"
+          },
+          "PRIMITIVE": {
+            "value": "MMCM"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          },
+          "USE_LOCKED": {
+            "value": "false"
+          },
+          "USE_RESET": {
+            "value": "false"
+          }
+        }
+      },
+      "v_axi4s_vid_out_0": {
+        "vlnv": "xilinx.com:ip:v_axi4s_vid_out:4.0",
+        "xci_name": "vgaSystem_v_axi4s_vid_out_0_1",
+        "xci_path": "ip\\vgaSystem_v_axi4s_vid_out_0_1\\vgaSystem_v_axi4s_vid_out_0_1.xci",
+        "inst_hier_path": "v_axi4s_vid_out_0"
+      },
+      "v_tc_0": {
+        "vlnv": "xilinx.com:ip:v_tc:6.2",
+        "xci_name": "vgaSystem_v_tc_0_0",
+        "xci_path": "ip\\vgaSystem_v_tc_0_0\\vgaSystem_v_tc_0_0.xci",
+        "inst_hier_path": "v_tc_0",
+        "parameters": {
+          "HAS_AXI4_LITE": {
+            "value": "false"
+          },
+          "INTERLACE_EN": {
+            "value": "false"
+          },
+          "enable_detection": {
+            "value": "false"
+          }
+        }
+      },
+      "rst_clk_wiz_0_148M": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "xci_name": "vgaSystem_rst_clk_wiz_0_148M_0",
+        "xci_path": "ip\\vgaSystem_rst_clk_wiz_0_148M_0\\vgaSystem_rst_clk_wiz_0_148M_0.xci",
+        "inst_hier_path": "rst_clk_wiz_0_148M"
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "vgaSystem_xlconstant_0_0",
+        "xci_path": "ip\\vgaSystem_xlconstant_0_0\\vgaSystem_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0"
+      },
+      "xlslice_0": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "vgaSystem_xlslice_0_0",
+        "xci_path": "ip\\vgaSystem_xlslice_0_0\\vgaSystem_xlslice_0_0.xci",
+        "inst_hier_path": "xlslice_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "3"
+          },
+          "DIN_WIDTH": {
+            "value": "24"
+          }
+        }
+      },
+      "xlslice_1": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "vgaSystem_xlslice_0_1",
+        "xci_path": "ip\\vgaSystem_xlslice_0_1\\vgaSystem_xlslice_0_1.xci",
+        "inst_hier_path": "xlslice_1",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "11"
+          },
+          "DIN_TO": {
+            "value": "8"
+          },
+          "DIN_WIDTH": {
+            "value": "24"
+          }
+        }
+      },
+      "xlslice_2": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "vgaSystem_xlslice_0_2",
+        "xci_path": "ip\\vgaSystem_xlslice_0_2\\vgaSystem_xlslice_0_2.xci",
+        "inst_hier_path": "xlslice_2",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "19"
+          },
+          "DIN_TO": {
+            "value": "16"
+          },
+          "DIN_WIDTH": {
+            "value": "24"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "v_tc_0_vtiming_out": {
+        "interface_ports": [
+          "v_tc_0/vtiming_out",
+          "v_axi4s_vid_out_0/vtiming_in"
+        ]
+      }
+    },
+    "nets": {
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "v_tc_0/clk",
+          "rst_clk_wiz_0_148M/slowest_sync_clk",
+          "v_axi4s_vid_out_0/aclk"
+        ]
+      },
+      "reset_rtl_1": {
+        "ports": [
+          "reset",
+          "rst_clk_wiz_0_148M/ext_reset_in"
+        ]
+      },
+      "rst_clk_wiz_0_148M_peripheral_aresetn": {
+        "ports": [
+          "rst_clk_wiz_0_148M/peripheral_aresetn",
+          "v_tc_0/resetn",
+          "v_axi4s_vid_out_0/aresetn"
+        ]
+      },
+      "sys_clock_1": {
+        "ports": [
+          "sys_clock",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "v_axi4s_vid_out_0_vid_data": {
+        "ports": [
+          "v_axi4s_vid_out_0/vid_data",
+          "xlslice_0/Din",
+          "xlslice_1/Din",
+          "xlslice_2/Din"
+        ]
+      },
+      "v_axi4s_vid_out_0_vid_hsync": {
+        "ports": [
+          "v_axi4s_vid_out_0/vid_hsync",
+          "vid_hsync_0"
+        ]
+      },
+      "v_axi4s_vid_out_0_vid_vsync": {
+        "ports": [
+          "v_axi4s_vid_out_0/vid_vsync",
+          "vid_vsync_0"
+        ]
+      },
+      "v_axi4s_vid_out_0_vtg_ce": {
+        "ports": [
+          "v_axi4s_vid_out_0/vtg_ce",
+          "v_tc_0/gen_clken"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "v_tc_0/clken",
+          "v_axi4s_vid_out_0/aclken",
+          "v_axi4s_vid_out_0/vid_io_out_ce"
+        ]
+      },
+      "xlslice_0_Dout": {
+        "ports": [
+          "xlslice_0/Dout",
+          "VGA_R"
+        ]
+      },
+      "xlslice_1_Dout": {
+        "ports": [
+          "xlslice_1/Dout",
+          "VGA_G"
+        ]
+      },
+      "xlslice_2_Dout": {
+        "ports": [
+          "xlslice_2/Dout",
+          "VGA_B"
+        ]
+      }
+    }
+  }
+}
